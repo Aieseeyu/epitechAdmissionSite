@@ -45,18 +45,18 @@ if(!$user) die('Identifiant ou mot de passe incorrect'); */?>
 <div class="container">
   <form method="post">
 
-    <input type="hidden" name="c" value="user"><br> 
+    <input type="hidden" name="c" value="User"><br> 
     <input type="hidden" name="m" value="login">
 
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="text" id="form2Example1" class="form-control" />
+      <input type="text" name="login" id="form2Example1" class="form-control" />
       <label class="form-label" for="form2Example1">Login</label>
     </div>
 
     <!-- Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="form2Example2" class="form-control" />
+      <input type="password" name="password" id="form2Example2" class="form-control" />
       <label class="form-label" for="form2Example2">Password</label>
     </div>
 

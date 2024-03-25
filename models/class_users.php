@@ -66,6 +66,8 @@ class User extends Db {
       }
       
     public function login(){
+      echo($_POST['login']);
+      echo($_POST['password']);
         if(!empty($_POST['login']) && !empty($_POST['password'])){
           try{
             $db = $this->db;

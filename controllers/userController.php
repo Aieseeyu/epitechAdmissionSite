@@ -49,8 +49,8 @@ class UserController {
     function login(){
 
         $_POST = $this->form->getDatas();
-
-            if($this->user->login()){
+        
+             if($this->user->login()){
                 header('Location: '.URL_SITE);
                 exit;
             } else $_SESSION['form_errors'] = array("Identifiants incorrects");
