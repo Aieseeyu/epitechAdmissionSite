@@ -42,30 +42,34 @@ if(!$user) die('Identifiant ou mot de passe incorrect'); */?>
 
 </form> -->
 
-<div class="container">
+<div class="container col-4">
   <form method="post">
 
     <input type="hidden" name="c" value="User"><br> 
     <input type="hidden" name="m" value="login">
 
     <!-- Email input -->
-    <div class="form-outline mb-4">
-      <input type="text" name="login" id="form2Example1" class="form-control" />
-      <label class="form-label" for="form2Example1">Login</label>
+    <div class="form-floating mb-4">
+      <input type="text" name="login" id="form2Example1" class="form-control" placeholder=""/>
+      <label class="floatingInput" for="form2Example1">Login</label>
     </div>
 
     <!-- Password input -->
-    <div class="form-outline mb-4">
-      <input type="password" name="password" id="form2Example2" class="form-control" />
-      <label class="form-label" for="form2Example2">Password</label>
+    <div class="form-floating mb-4">
+      <input type="password" name="password" id="form2Example2" class="form-control" placeholder=""/>
+      <label class="floatingInput" for="form2Example2">Password</label>
+    </div>
+    
+    <!-- Submit button -->
+    <div class="text-center ">
+      <button type="submit" class="btn btn-primary btn-block mb-4 col-4">Log in</button>
     </div>
 
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Log in</button>
-
-    <!-- Register buttons -->
-    <div class="text-center">
+    <div class="text-center bg-light rounded">
       <p>Not a member? <a href="<?= URL_SITE; ?>?p=register">Register</a></p>
     </div>
+    
   </form>
 </div>
+
+<!-- Register buttons -->

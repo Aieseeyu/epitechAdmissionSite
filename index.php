@@ -6,8 +6,6 @@ if(!isset($_SESSION)){
     if(!isset($_SESSION['connected'])) $_SESSION['connected'] = 0;
 }
 
-var_dump($_SESSION);
-
 //on inclut le fichier de configuration
 require_once('conf.php');
 
@@ -58,7 +56,16 @@ elseif($is_connected){
 }
 else include('views/errors/404.php');
 
+
 //on inclut le footer
 include('views/footer.php');
+
+?>
+<div class="bg-light">
+    <pre>
+        <?=var_dump($_SESSION);?>
+    </pre>
+</div>
+<?php
 
 ?>
